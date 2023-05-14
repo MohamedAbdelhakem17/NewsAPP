@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple News APP</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============================ Start Navbar ============================ -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">News <span>APP</span></h1>
+        <div class="toggle" id="toggle">
+          <i class="fa-solid fa-bars" id="ico"></i>
+        </div>
+        <ul class="country" id="pop">
+          <li class="nav-link active" data-code="EG">Egypt</li>
+          <li class="nav-link" data-code="US">United States</li>
+          <li class="nav-link" data-code="FR">France</li>
+          <li class="nav-link" data-code="IT">Italy</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ============================ End Navbar ============================ -->
+
+    <!-- ============================ Start Content ============================ -->
+    <section class="content">
+      <!-- ============================ Start Aside ============================ -->
+      <aside class="category">
+        <ul>
+          <li id="category" data-category="business" class="active">
+            <i class="fa-sharp fa-solid fa-business-time"></i
+            ><span>business</span>
+          </li>
+          <li id="category" data-category="entertainment">
+            <i class="fa-solid fa-gamepad"></i><span>entertainment</span>
+          </li>
+          <li id="category" data-category="general">
+            <i class="fa-brands fa-magento"></i><span>general</span>
+          </li>
+          <li id="category" data-category="health">
+            <i class="fa-solid fa-notes-medical"></i><span>health</span>
+          </li>
+          <li id="category" data-category="science">
+            <i class="fa-solid fa-brain"></i><span>science</span>
+          </li>
+          <li id="category" data-category="sport">
+            <i class="fa-regular fa-futbol"></i><span>sport</span>
+          </li>
+          <li id="category" data-category="technology">
+            <i class="fa-solid fa-microchip"></i><span>technology</span>
+          </li>
+        </ul>
+      </aside>
+      <!-- ============================ End Aside ============================ -->
+
+      <!-- ============================ Start News ============================ -->
+      <section class="news" id="newsContainer">
+        <h2 id="title">
+          The latest <span>sports</span> news in <span>Egept</span>
+        </h2>
+        <div class="container" id="new"></div>
+      </section>
+      <!-- ============================ End News ============================ -->
+    </section>
+    <!-- ============================ End Content ============================ -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
